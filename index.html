@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café da Manhã do Diabético — 21 Opções Saborosas Sem Disparar a Glicemia</title>
+  <meta name="description" content="Descubra 21 opções de café da manhã deliciosas e seguras para diabéticos. Sem açúcar, sem culpa, sem complicação." />
+  <!-- ═══ META PIXEL ═══ -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1342600950692801');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1342600950692801&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- ═══ FIM META PIXEL ═══ -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    html { scroll-behavior: smooth; }
+
+    @keyframes countdownPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    .countdown-pulse { animation: countdownPulse 1s ease-in-out infinite; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeInUp 0.6s ease-out both; }
+    .fade-up-1 { animation-delay: 0.1s; }
+    .fade-up-2 { animation-delay: 0.2s; }
+    .fade-up-3 { animation-delay: 0.3s; }
+    .fade-up-4 { animation-delay: 0.4s; }
+
+    .hero-gradient { background: linear-gradient(180deg, #FFF7ED 0%, #ffffff 100%); }
+    .offer-gradient { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%); }
+    .pricing-gradient { background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); }
+
+    .btn-green {
+      display: inline-block;
+      background: #16a34a;
+      color: #fff;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 1rem;
+      padding: 1.1rem 2rem;
+      font-size: 1.15rem;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(22,163,74,0.3);
+      transition: transform 0.15s, background 0.15s, box-shadow 0.15s;
+      text-decoration: none;
+      width: 100%;
+    }
+    .btn-green:hover { background: #15803d; transform: scale(1.02); box-shadow: 0 12px 32px rgba(22,163,74,0.4); }
+    .btn-green:active { transform: scale(0.98); }
+
+    .btn-orange {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 1rem;
+      padding: 1.1rem 2rem;
+      font-size: 1.15rem;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(249,115,22,0.3);
+      transition: transform 0.15s, background 0.15s;
+      text-decoration: none;
+      width: 100%;
+    }
+    .btn-orange:hover { background: #ea580c; transform: scale(1.02); }
+    .btn-orange:active { transform: scale(0.98); }
+
+    .btn-sub { display: block; font-size: 0.72rem; font-weight: 600; opacity: 0.8; text-transform: none; letter-spacing: 0; margin-top: 3px; }
+
+    .card-hover { transition: transform 0.25s, box-shadow 0.25s; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); }
+
+    .sticky-shadow { box-shadow: 0 -4px 20px rgba(0,0,0,0.12); }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .accordion-body.open { max-height: 400px; }
+
+    .accordion-icon { transition: transform 0.25s ease; }
+    .accordion-icon.open { transform: rotate(45deg); }
+
+    @media (min-width: 640px) {
+      .btn-green, .btn-orange { width: auto; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+<!-- ═══════════════════════════════════════════
+     COUNTDOWN BANNER
+════════════════════════════════════════════ -->
+<div class="bg-orange-500 text-white py-3 px-4 text-center sticky top-0 z-50 shadow-md">
+  <p class="text-sm sm:text-base font-bold flex flex-wrap items-center justify-center gap-2">
+    <span>⚡</span>
+    <span class="uppercase tracking-wide">OFERTA ESPECIAL: 74% DE DESCONTO SOMENTE HOJE!</span>
+    <span id="countdown" class="bg-white text-orange-600 font-black px-3 py-0.5 rounded-full text-sm countdown-pulse">ACABA EM: 14:58</span>
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero-gradient pt-12 pb-20 px-4">
+  <div class="max-w-3xl mx-auto text-center">
+
+    <!-- Tag -->
+    <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 font-bold text-sm px-4 py-2 rounded-full mb-6 fade-up fade-up-1">
+      ☀️ Café da Manhã do Diabético
+    </div>
+
+    <!-- Headline -->
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-5 fade-up fade-up-2">
+      21 Opções de Café da Manhã
+      <span class="text-orange-500"> Saborosas e Seguras</span>
+      Para Diabéticos Começarem o Dia Sem Culpa
+    </h1>
+
+    <!-- Sub -->
+    <p class="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto fade-up fade-up-3">
+      Da panqueca proteica ao iogurte com frutas, da tapioca fit ao pão de queijo funcional: o cardápio completo de café da manhã para diabéticos que querem de volta o prazer de comer — sem disparar a glicemia logo cedo.
+    </p>
+
+    <!-- CTA Hero -->
+    <div class="max-w-sm mx-auto mb-6 fade-up fade-up-4">
+      <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+         onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+         class="btn-green">
+        Quero Começar o Dia Sem Medo
+        <span class="btn-sub">Acesso imediato · Pagamento único</span>
+      </a>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="flex flex-wrap items-center justify-center gap-4 text-sm font-semibold text-gray-600 mb-10">
+      <span class="flex items-center gap-1"><span class="text-green-500">✓</span> Receitas Testadas</span>
+      <span class="text-gray-300">|</span>
+      <span class="flex items-center gap-1"><span class="text-green-500">✓</span> Acesso Vitalício</span>
+      <span class="text-gray-300">|</span>
+      <span class="flex items-center gap-1"><span class="text-green-500">✓</span> Garantia Blindada</span>
+    </div>
+
+    <!-- Product mockup -->
+    <div class="relative max-w-sm mx-auto">
+      <div class="bg-white rounded-3xl shadow-2xl border border-orange-100 p-8">
+        <div class="text-7xl mb-4">🍳</div>
+        <div class="bg-orange-50 rounded-2xl p-4 mb-4">
+          <p class="font-black text-gray-900 text-lg">Café da Manhã do Diabético</p>
+          <p class="text-orange-600 font-bold text-sm">21 Opções · Zero Açúcar · Zero Culpa</p>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div class="bg-gray-50 rounded-xl p-2 text-center"><p class="text-xs font-semibold text-gray-700 leading-tight">🥞 Panqueca Fit</p></div>
+          <div class="bg-gray-50 rounded-xl p-2 text-center"><p class="text-xs font-semibold text-gray-700 leading-tight">🥑 Tapioca Verde</p></div>
+          <div class="bg-gray-50 rounded-xl p-2 text-center"><p class="text-xs font-semibold text-gray-700 leading-tight">🫐 Bowl Proteico</p></div>
+          <div class="bg-gray-50 rounded-xl p-2 text-center"><p class="text-xs font-semibold text-gray-700 leading-tight">🥚 Omelete Rapido</p></div>
+          <div class="bg-gray-50 rounded-xl p-2 text-center"><p class="text-xs font-semibold text-gray-700 leading-tight">🍓 Vitamina Light</p></div>
+          <div class="bg-gray-50 rounded-xl p-2 text-center"><p class="text-xs font-semibold text-gray-700 leading-tight">🧀 Pao de Queijo</p></div>
+        </div>
+      </div>
+      <!-- Floating pills -->
+      <div class="absolute -top-3 -right-2 bg-green-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">✓ Glicemia Controlada</div>
+      <div class="absolute -bottom-3 -left-2 bg-orange-500 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg">⚡ Acesso Imediato</div>
+    </div>
+
+    <!-- Sub badges -->
+    <div class="flex flex-wrap justify-center gap-3 mt-12">
+      <span class="bg-green-50 border border-green-200 text-green-700 font-bold text-sm px-4 py-2 rounded-full">🌿 Glicemia Controlada</span>
+      <span class="bg-orange-50 border border-orange-200 text-orange-700 font-bold text-sm px-4 py-2 rounded-full">☕ Café Liberado</span>
+      <span class="bg-blue-50 border border-blue-200 text-blue-700 font-bold text-sm px-4 py-2 rounded-full">💪 Energia Garantida</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PAIN SECTION
+════════════════════════════════════════════ -->
+<section class="bg-white py-16 px-4">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
+        Cansado de Começar Todo Dia
+        <span class="text-red-500"> com Medo e Culpa?</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Ter diabetes não significa que o café da manhã precisa ser um sofrimento. O problema é que ninguém te ensinou como montar o cardápio certo — seguro, gostoso e fácil de fazer todo dia.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="flex gap-4 items-start bg-red-50 border border-red-100 rounded-2xl p-5">
+        <div class="flex-shrink-0 w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-lg">✗</div>
+        <div>
+          <h3 class="font-black text-gray-900 text-lg mb-1">Acordar com Medo Toda Manhã</h3>
+          <p class="text-gray-600 leading-relaxed">Você abre os olhos e a primeira coisa que pensa é: <em>"O que posso comer sem estragar minha glicemia?"</em> O café da manhã virou uma fonte de ansiedade diária.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start bg-red-50 border border-red-100 rounded-2xl p-5">
+        <div class="flex-shrink-0 w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-lg">✗</div>
+        <div>
+          <h3 class="font-black text-gray-900 text-lg mb-1">Tudo Parece Proibido</h3>
+          <p class="text-gray-600 leading-relaxed">Pão, tapioca, fruta, suco, leite... você não sabe mais o que pode e o que não pode. A dúvida te paralisa antes mesmo de chegar à geladeira.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start bg-red-50 border border-red-100 rounded-2xl p-5">
+        <div class="flex-shrink-0 w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-lg">✗</div>
+        <div>
+          <h3 class="font-black text-gray-900 text-lg mb-1">Receitas "Diet" Que Decepcionam</h3>
+          <p class="text-gray-600 leading-relaxed">Já tentou receitas da internet e veio decepção: sem sabor, sem textura, sem vontade de repetir. Parece que ter diabetes significa nunca mais ter prazer em comer.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bridge -->
+    <div class="mt-10 bg-orange-50 border border-orange-200 rounded-2xl p-6 text-center">
+      <p class="text-xl font-black text-gray-900 mb-2">
+        E se você tivesse 21 opções de café da manhã prontas,
+        <span class="text-orange-500"> testadas e aprovadas para diabéticos</span> — para nunca mais ficar na dúvida?
+      </p>
+      <p class="text-gray-600 mt-2">Sem pular refeição. Sem improvisar. Sem medo do pico de glicose logo cedo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     RECIPE GALLERY
+════════════════════════════════════════════ -->
+<section class="bg-gray-50 py-16 px-4">
+  <div class="max-w-4xl mx-auto">
+
+    <div class="text-center mb-12">
+      <span class="inline-block bg-orange-100 text-orange-700 font-bold text-sm px-4 py-1.5 rounded-full mb-4">O que você vai aprender</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Opções de Café da Manhã Que Você Vai Amar</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Tudo adaptado com segurança para quem tem diabetes. Saboroso de verdade, aprovado na glicemia, fácil de preparar todo dia.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-10">
+
+      <!-- Panqueca -->
+      <div class="bg-white border-2 border-amber-200 rounded-2xl overflow-hidden card-hover">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop&q=80" alt="Panqueca proteica" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute bottom-2 left-2 bg-amber-400 text-white text-xs font-black px-2 py-0.5 rounded-full">Zero Farinha</span>
+        </div>
+        <div class="p-3 text-center">
+          <h3 class="font-black text-gray-900 text-sm leading-tight mb-1">PANQUECA PROTEICA</h3>
+          <span class="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">Zero Açúcar · Alto Proteína</span>
+        </div>
+      </div>
+
+      <!-- Bowl iogurte -->
+      <div class="bg-white border-2 border-blue-200 rounded-2xl overflow-hidden card-hover">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop&q=80" alt="Bowl de iogurte com frutas" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute bottom-2 left-2 bg-blue-500 text-white text-xs font-black px-2 py-0.5 rounded-full">Baixo IG</span>
+        </div>
+        <div class="p-3 text-center">
+          <h3 class="font-black text-gray-900 text-sm leading-tight mb-1">BOWL COM FRUTAS</h3>
+          <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-0.5 rounded-full">Zero Açúcar · Cremoso</span>
+        </div>
+      </div>
+
+      <!-- Tapioca -->
+      <div class="bg-white border-2 border-green-200 rounded-2xl overflow-hidden card-hover">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop&q=80" alt="Tapioca fit recheada" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute bottom-2 left-2 bg-green-500 text-white text-xs font-black px-2 py-0.5 rounded-full">Zero Glúten</span>
+        </div>
+        <div class="p-3 text-center">
+          <h3 class="font-black text-gray-900 text-sm leading-tight mb-1">TAPIOCA FIT RECHEADA</h3>
+          <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">Zero Açúcar · Leve</span>
+        </div>
+      </div>
+
+      <!-- Omelete -->
+      <div class="bg-white border-2 border-yellow-200 rounded-2xl overflow-hidden card-hover">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?w=400&h=300&fit=crop&q=80" alt="Omelete cremoso" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute bottom-2 left-2 bg-yellow-500 text-white text-xs font-black px-2 py-0.5 rounded-full">15 min</span>
+        </div>
+        <div class="p-3 text-center">
+          <h3 class="font-black text-gray-900 text-sm leading-tight mb-1">OMELETE CREMOSO</h3>
+          <span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-2 py-0.5 rounded-full">Alto Proteína · Zero Açúcar</span>
+        </div>
+      </div>
+
+      <!-- Vitamina -->
+      <div class="bg-white border-2 border-pink-200 rounded-2xl overflow-hidden card-hover">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop&q=80" alt="Vitamina sem açúcar" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute bottom-2 left-2 bg-pink-500 text-white text-xs font-black px-2 py-0.5 rounded-full">Baixo IG</span>
+        </div>
+        <div class="p-3 text-center">
+          <h3 class="font-black text-gray-900 text-sm leading-tight mb-1">VITAMINA SEM AÇÚCAR</h3>
+          <span class="bg-pink-100 text-pink-700 text-xs font-bold px-2 py-0.5 rounded-full">Cremosa · Natural</span>
+        </div>
+      </div>
+
+      <!-- Pão de queijo -->
+      <div class="bg-white border-2 border-orange-200 rounded-2xl overflow-hidden card-hover">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop&q=80" alt="Pão de queijo funcional" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <span class="absolute bottom-2 left-2 bg-orange-500 text-white text-xs font-black px-2 py-0.5 rounded-full">Zero Farinha</span>
+        </div>
+        <div class="p-3 text-center">
+          <h3 class="font-black text-gray-900 text-sm leading-tight mb-1">PÃO DE QUEIJO FUNCIONAL</h3>
+          <span class="bg-orange-100 text-orange-700 text-xs font-bold px-2 py-0.5 rounded-full">Zero Açúcar · Fit</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+         onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+         class="btn-orange" style="max-width:480px; margin: 0 auto;">
+        Quero Acesso às 21 Opções de Café da Manhã
+        <span class="btn-sub">+ 15 opções extras e bônus especiais inclusos</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     QUALIFICATION CHECKLIST
+════════════════════════════════════════════ -->
+<section class="bg-white py-16 px-4">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-3">Isso Acontece com Você Todo Dia?</h2>
+      <p class="text-gray-600 text-lg">Se você se identificou com pelo menos 2 itens abaixo, esse guia foi feito especialmente para você:</p>
+    </div>
+
+    <div class="space-y-3 mb-10">
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Você tem diabetes ou pré-diabetes e nunca sabe o que comer de manhã.</p>
+      </div>
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Tem medo de que o café da manhã dispare sua glicose e estrague o dia todo.</p>
+      </div>
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Sente que vive improvisando — ou pula a refeição e passa mal depois.</p>
+      </div>
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Já tentou receitas sem açúcar da internet e veio decepção atrás de decepção.</p>
+      </div>
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Quer de volta o prazer de sentar e curtir um café da manhã gostoso, sem ansiedade.</p>
+      </div>
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Está cansado de encarar o mesmo pratão de ovos todo dia sem saber o que variar.</p>
+      </div>
+      <div class="flex items-start gap-3 bg-green-50 border border-green-200 rounded-xl p-4">
+        <span class="flex-shrink-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black mt-0.5">✓</span>
+        <p class="text-gray-800 font-medium leading-relaxed">Quer uma solução prática, pronta e segura — sem precisar virar nutricionista.</p>
+      </div>
+    </div>
+
+    <div class="bg-orange-500 text-white rounded-2xl p-6 text-center mb-8">
+      <p class="text-2xl font-black mb-2">Então Esse Guia é Para Você</p>
+      <p class="text-orange-100 leading-relaxed">Mais de 4.200 diabéticos já transformaram o café da manhã no momento mais tranquilo do dia com essas receitas.</p>
+    </div>
+
+    <div class="text-center">
+      <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+         onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+         class="btn-green" style="max-width:420px; margin:0 auto;">
+        Sim! Quero Começar o Dia Sem Culpa
+        <span class="btn-sub">Acesso imediato · Garantia de 7 dias</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section class="bg-gray-50 py-16 px-4">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="text-center mb-12">
+      <span class="inline-block bg-yellow-100 text-yellow-700 font-bold text-sm px-4 py-1.5 rounded-full mb-4">⭐ Mais de 4.200 Diabéticos Satisfeitos</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">O Que Dizem Quem Já Transformou o Café da Manhã</h2>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">Resultados reais de pessoas reais que decidiram parar de sofrer toda manhã.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 card-hover flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">👩‍🦳</span>
+          <div><p class="font-black text-gray-900 text-sm">Marlene S.</p><p class="text-gray-400 text-xs">São Paulo, SP</p></div>
+          <div class="ml-auto text-yellow-400 text-lg">★★★★★</div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-1">"Tinha diabetes há 8 anos e o café da manhã era meu maior desafio. Hoje tenho 21 opções e fico até com preguiça de escolher! Minha glicose de manhã baixou muito."</p>
+        <div class="bg-green-50 border border-green-200 rounded-xl px-3 py-2"><p class="text-green-700 font-bold text-xs">✓ Glicose de jejum caiu 23 pontos em 3 semanas</p></div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 card-hover flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">👨‍🦲</span>
+          <div><p class="font-black text-gray-900 text-sm">José R.</p><p class="text-gray-400 text-xs">Belo Horizonte, MG</p></div>
+          <div class="ml-auto text-yellow-400 text-lg">★★★★★</div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-1">"Minha esposa comprou pra mim e foi a melhor coisa. Parei de pular o café da manhã. A panqueca proteica virou meu favorito, faço em 10 minutos."</p>
+        <div class="bg-green-50 border border-green-200 rounded-xl px-3 py-2"><p class="text-green-700 font-bold text-xs">✓ Abandonou o hábito de pular o café da manhã</p></div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 card-hover flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">👩🏾</span>
+          <div><p class="font-black text-gray-900 text-sm">Aparecida T.</p><p class="text-gray-400 text-xs">Fortaleza, CE</p></div>
+          <div class="ml-auto text-yellow-400 text-lg">★★★★★</div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-1">"Achei que seria mais do mesmo diet sem gosto. Fui com desconfiança e me surpreendi. A vitamina de banana sem açúcar ficou gostosa de verdade."</p>
+        <div class="bg-green-50 border border-green-200 rounded-xl px-3 py-2"><p class="text-green-700 font-bold text-xs">✓ "Ficou gostosa de verdade"</p></div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 card-hover flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">👨🏻‍🦱</span>
+          <div><p class="font-black text-gray-900 text-sm">Roberto M.</p><p class="text-gray-400 text-xs">Curitiba, PR</p></div>
+          <div class="ml-auto text-yellow-400 text-lg">★★★★★</div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-1">"Sou pré-diabético e sempre ficava com medo de comer errado cedo. Agora tenho um cardápio certo. Os ovos cremosos com queijo são incríveis."</p>
+        <div class="bg-green-50 border border-green-200 rounded-xl px-3 py-2"><p class="text-green-700 font-bold text-xs">✓ Pré-diabético com glicemia estabilizada</p></div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 card-hover flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">👩🏽‍🦱</span>
+          <div><p class="font-black text-gray-900 text-sm">Neuza F.</p><p class="text-gray-400 text-xs">Recife, PE</p></div>
+          <div class="ml-auto text-yellow-400 text-lg">★★★★★</div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-1">"O pão de queijo funcional salvou minha vida! Achei que nunca mais ia comer. Esse ficou igual ao original. Faço toda semana agora."</p>
+        <div class="bg-green-50 border border-green-200 rounded-xl px-3 py-2"><p class="text-green-700 font-bold text-xs">✓ "Ficou igual ao original"</p></div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 card-hover flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">👨🏻‍🦳</span>
+          <div><p class="font-black text-gray-900 text-sm">Carlos A.</p><p class="text-gray-400 text-xs">Porto Alegre, RS</p></div>
+          <div class="ml-auto text-yellow-400 text-lg">★★★★★</div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-1">"Comprei com 7 dias de garantia pensando em pedir reembolso. Semana passada mostrei pro meu endocrinologista e ele aprovou. Valeu cada centavo."</p>
+        <div class="bg-green-50 border border-green-200 rounded-xl px-3 py-2"><p class="text-green-700 font-bold text-xs">✓ Aprovado pelo endocrinologista</p></div>
+      </div>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-4 text-center">
+      <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+        <p class="text-3xl font-black text-orange-500">4.200+</p>
+        <p class="text-gray-600 text-sm font-medium">Clientes Satisfeitos</p>
+      </div>
+      <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+        <p class="text-3xl font-black text-green-600">4.9/5</p>
+        <p class="text-gray-600 text-sm font-medium">Avaliação Média</p>
+      </div>
+      <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+        <p class="text-3xl font-black text-orange-500">97%</p>
+        <p class="text-gray-600 text-sm font-medium">Recomendam</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     OFFER SECTION
+════════════════════════════════════════════ -->
+<section id="oferta" class="offer-gradient py-16 px-4">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="text-center mb-10">
+      <span class="inline-block bg-green-600 text-white font-bold text-sm px-4 py-1.5 rounded-full mb-4">Kit Completo Digital</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-3">Tudo o Que Você Recebe ao Garantir Seu Acesso Agora</h2>
+      <p class="text-gray-600 text-lg">Um café da manhã novo todo dia — por meses.</p>
+    </div>
+
+    <!-- Product card -->
+    <div class="bg-white rounded-3xl shadow-xl border border-green-100 overflow-hidden mb-8">
+      <div class="bg-gradient-to-r from-orange-400 to-orange-600 p-6 text-white text-center">
+        <div class="text-5xl mb-2">☀️</div>
+        <h3 class="text-2xl font-black">Café da Manhã do Diabético</h3>
+        <p class="text-orange-100 text-sm mt-1">Guia Completo · 21 Opções + Bônus Exclusivos</p>
+      </div>
+      <div class="p-6 space-y-3">
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">7 Receitas de Panquecas e Wraps Fit</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">5 Opções de Tapioca Recheada Sem Açúcar</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">3 Vitaminas e Smoothies de Baixo IG</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">Pão de Queijo Funcional e Pão de Abobrinha</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">Omelete, Ovos Mexidos Cremosos e Estrelado Fit</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">Bowl Proteico, Iogurte Grego Fit e Granola Zero</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">Mingau de Aveia Sem Açúcar (3 versões)</p>
+        </div>
+        <div class="flex items-start gap-3 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+          <span class="text-green-600 font-black text-base mt-0.5 flex-shrink-0">✔</span>
+          <p class="font-semibold text-gray-800 leading-snug">Lista de Compras Semanal Já Organizada</p>
+        </div>
+        <!-- Bonus -->
+        <div class="flex items-start gap-3 bg-orange-50 border border-orange-200 rounded-xl px-4 py-3">
+          <span class="text-orange-500 text-base mt-0.5 flex-shrink-0">🎁</span>
+          <p class="font-semibold text-orange-800 leading-snug">BÔNUS: 10 Sucos Verdes Para Controlar a Glicose</p>
+        </div>
+        <div class="flex items-start gap-3 bg-orange-50 border border-orange-200 rounded-xl px-4 py-3">
+          <span class="text-orange-500 text-base mt-0.5 flex-shrink-0">🎁</span>
+          <p class="font-semibold text-orange-800 leading-snug">BÔNUS: Guia de Substituições de Ingredientes</p>
+        </div>
+        <div class="flex items-start gap-3 bg-orange-50 border border-orange-200 rounded-xl px-4 py-3">
+          <span class="text-orange-500 text-base mt-0.5 flex-shrink-0">🎁</span>
+          <p class="font-semibold text-orange-800 leading-snug">BÔNUS: O Que Não Comer Antes das 10h (Erros Comuns)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Value stack -->
+    <div class="bg-gray-900 text-white rounded-2xl p-6 mb-8">
+      <p class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide mb-4">Valor Total do Kit</p>
+      <div class="space-y-2 mb-4">
+        <div class="flex justify-between text-sm"><span class="text-gray-300">Guia com 21 Receitas</span><span class="text-gray-400 line-through">R$ 97,00</span></div>
+        <div class="flex justify-between text-sm"><span class="text-gray-300">Lista de Compras Semanal</span><span class="text-gray-400 line-through">R$ 27,00</span></div>
+        <div class="flex justify-between text-sm"><span class="text-gray-300">BÔNUS: 10 Sucos Verdes</span><span class="text-gray-400 line-through">R$ 37,00</span></div>
+        <div class="flex justify-between text-sm"><span class="text-gray-300">BÔNUS: Guia de Substituições</span><span class="text-gray-400 line-through">R$ 27,00</span></div>
+        <div class="flex justify-between text-sm"><span class="text-gray-300">BÔNUS: Erros no Café da Manhã</span><span class="text-gray-400 line-through">R$ 27,00</span></div>
+      </div>
+      <div class="border-t border-gray-700 pt-4 flex justify-between items-center">
+        <span class="text-gray-300 font-semibold">Valor Total:</span>
+        <span class="text-gray-400 line-through text-lg">R$ 215,00</span>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+         onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+         class="btn-green" style="max-width:480px; margin:0 auto; font-size:1.2rem; padding: 1.3rem 2rem;">
+        Quero Esse Guia Completo Agora
+        <span class="btn-sub">Acesso imediato · Garantia incondicional de 7 dias</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PRICING SECTION
+════════════════════════════════════════════ -->
+<section id="preco" class="pricing-gradient py-16 px-4">
+  <div class="max-w-xl mx-auto text-center">
+
+    <div class="inline-flex items-center gap-2 bg-white/20 text-white font-bold text-sm px-4 py-2 rounded-full mb-6">
+      ⚡ Oferta por tempo limitado
+    </div>
+
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-2">Seu Café da Manhã Transformado por Menos de</h2>
+    <p class="text-green-200 text-lg mb-8">do que um café e pão na padaria</p>
+
+    <!-- Price card -->
+    <div class="bg-white rounded-3xl shadow-2xl p-8 mb-6">
+      <p class="text-gray-400 font-semibold text-lg line-through mb-1">De R$ 147,00</p>
+      <div class="inline-block bg-orange-500 text-white font-black text-sm px-3 py-1 rounded-full mb-4">74% OFF · HOJE APENAS</div>
+
+      <div class="mb-2">
+        <span class="text-gray-500 text-2xl font-bold">R$</span>
+        <span class="text-7xl font-black text-gray-900 leading-none">37</span>
+        <span class="text-gray-500 text-2xl font-bold">,90</span>
+      </div>
+      <p class="text-gray-500 text-sm mb-6">Pagamento único · Acesso vitalício</p>
+
+      <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+         onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+         class="btn-green" style="font-size:1.2rem; padding: 1.3rem 2rem; border-radius: 1rem;">
+        QUERO MEU ACESSO AGORA
+      </a>
+
+      <p class="text-gray-400 text-xs mt-3">Pagamento único · Sem mensalidades · Acesso vitalício</p>
+
+      <div class="flex items-center justify-center gap-3 mt-4 text-gray-400 text-xs font-semibold">
+        <span>💳 Cartão</span><span>·</span><span>📱 PIX</span><span>·</span><span>🏦 Boleto</span>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center gap-2 text-green-100 text-sm font-semibold">
+      <span>🔒</span><span>Ambiente 100% seguro · Dados protegidos</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     GUARANTEE
+════════════════════════════════════════════ -->
+<section class="bg-white py-16 px-4">
+  <div class="max-w-2xl mx-auto">
+    <div class="flex flex-col sm:flex-row items-center gap-8 bg-gray-50 border-2 border-green-200 rounded-3xl p-8">
+      <div class="flex-shrink-0">
+        <div class="w-28 h-28 bg-green-100 rounded-full flex items-center justify-center">
+          <span class="text-6xl">🛡️</span>
+        </div>
+      </div>
+      <div>
+        <div class="inline-block bg-green-600 text-white font-black text-sm px-3 py-1 rounded-full mb-3">GARANTIA INCONDICIONAL DE 7 DIAS</div>
+        <h3 class="text-2xl font-black text-gray-900 mb-3">Zero Risco Para Você</h3>
+        <p class="text-gray-600 leading-relaxed">Tenho tanta confiança que essas receitas vão transformar seu café da manhã que tiro todo o risco das suas costas. Se em até <strong>7 dias</strong> você não amar o guia — seja por qualquer motivo — basta me enviar um e-mail. Devolvo <strong>100% do seu dinheiro</strong>, sem perguntas, sem burocracia, sem demora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════ -->
+<section class="bg-gray-50 py-16 px-4">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-3">Perguntas Frequentes</h2>
+      <p class="text-gray-600 text-lg">Tire suas dúvidas antes de garantir seu acesso.</p>
+    </div>
+
+    <div class="space-y-3" id="faq-container">
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors">
+          <span class="text-base leading-snug">Como recebo o guia depois da compra?</span>
+          <span class="faq-icon flex-shrink-0 w-7 h-7 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-black text-lg">+</span>
+        </button>
+        <div class="accordion-body">
+          <p class="px-5 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base">Assim que o pagamento é confirmado, você recebe o acesso por e-mail em poucos minutos. É 100% digital — abre no celular, tablet ou computador, quantas vezes quiser, sem prazo de expiração.</p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors">
+          <span class="text-base leading-snug">Essas receitas são seguras para quem tem diabetes?</span>
+          <span class="faq-icon flex-shrink-0 w-7 h-7 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-black text-lg">+</span>
+        </button>
+        <div class="accordion-body">
+          <p class="px-5 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base">Sim. Todas foram desenvolvidas para não disparar a glicose, usando ingredientes de baixo índice glicêmico e substituições seguras de açúcar. Mesmo assim, é sempre importante acompanhar com seu médico ou nutricionista, especialmente se você usa insulina.</p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors">
+          <span class="text-base leading-snug">Os ingredientes são fáceis de encontrar?</span>
+          <span class="faq-icon flex-shrink-0 w-7 h-7 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-black text-lg">+</span>
+        </button>
+        <div class="accordion-body">
+          <p class="px-5 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base">Sim! Usamos ingredientes simples e baratos, encontrados em qualquer supermercado ou feira. Nada de itens importados ou caros. A lista de compras semanal inclusa já te ajuda a organizar tudo.</p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors">
+          <span class="text-base leading-snug">As receitas são complicadas de fazer?</span>
+          <span class="faq-icon flex-shrink-0 w-7 h-7 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-black text-lg">+</span>
+        </button>
+        <div class="accordion-body">
+          <p class="px-5 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base">De jeito nenhum. Foram pensadas para o dia a dia: passo a passo simples, rápido e sem equipamentos especiais. A maioria fica pronta em menos de 15 minutos. Mesmo quem não tem costume de cozinhar consegue.</p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors">
+          <span class="text-base leading-snug">Funciona para pré-diabéticos também?</span>
+          <span class="faq-icon flex-shrink-0 w-7 h-7 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-black text-lg">+</span>
+        </button>
+        <div class="accordion-body">
+          <p class="px-5 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base">Sim! As receitas são ideais tanto para quem tem diabetes tipo 2 quanto para pré-diabéticos. Controlar a glicemia no café da manhã é especialmente importante em casos de pré-diabetes para evitar a progressão da doença.</p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors">
+          <span class="text-base leading-snug">E se eu não gostar?</span>
+          <span class="faq-icon flex-shrink-0 w-7 h-7 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-black text-lg">+</span>
+        </button>
+        <div class="accordion-body">
+          <p class="px-5 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base">Você tem 7 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito com o guia, basta enviar um e-mail e devolvemos 100% do seu dinheiro — sem perguntas, sem complicação.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Final CTA -->
+    <div class="mt-10 text-center">
+      <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+         onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+         class="btn-green" style="max-width:420px; margin:0 auto; font-size:1.15rem;">
+        Quero Garantir o Meu Acesso
+        <span class="btn-sub">Ainda com dúvidas? Me mande um e-mail antes de comprar.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="bg-gray-900 text-gray-400 py-10 px-4 text-center text-sm">
+  <p class="font-semibold text-gray-300 mb-2">© 2026 Café da Manhã do Diabético. Todos os direitos reservados.</p>
+  <p class="max-w-2xl mx-auto leading-relaxed text-xs">
+    <strong>Aviso Legal:</strong> Os resultados podem variar de pessoa para pessoa. As informações fornecidas neste material têm caráter educativo e não substituem o acompanhamento médico ou nutricional profissional. Em caso de condição clínica específica, consulte sempre um profissional de saúde qualificado antes de fazer alterações na sua dieta.
+  </p>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     STICKY MOBILE CTA
+════════════════════════════════════════════ -->
+<div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 hidden sticky-shadow sm:hidden">
+  <div class="bg-white px-4 py-3">
+    <a href="https://pay.kirvano.com/1c16a06f-5836-45f2-ad99-78483dc82d8e"
+       onclick="fbq('track','InitiateCheckout',{content_name:'Cafe da Manha do Diabetico',content_ids:['CMD001'],value:37.90,currency:'BRL'})"
+       class="btn-green" style="border-radius: 0.75rem; font-size: 1rem; padding: 1rem;">
+      Quero Meu Acesso — R$ 37,90
+    </a>
+    <p class="text-center text-gray-400 text-xs mt-1">Garantia de 7 dias · Acesso imediato</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+  // ════════════════════════════════════════════════════
+  // META PIXEL — DADOS DO PRODUTO
+  // ════════════════════════════════════════════════════
+  var _pixelProduct = {
+    content_name: 'Cafe da Manha do Diabetico',
+    content_ids:  ['CMD001'],
+    content_type: 'product',
+    value:        37.90,
+    currency:     'BRL'
+  };
+
+  // ────────────────────────────────────────────────────
+  // 1. ViewContent — usuário engajou (3 segundos na página)
+  // ────────────────────────────────────────────────────
+  setTimeout(function() {
+    fbq('track', 'ViewContent', _pixelProduct);
+  }, 3000);
+
+  // ────────────────────────────────────────────────────
+  // 2. Eventos por profundidade de scroll
+  // ────────────────────────────────────────────────────
+  var _scrollFired = {};
+  window.addEventListener('scroll', function() {
+    var pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+
+    // 25% — leu os pain points (interesse real)
+    if (pct >= 25 && !_scrollFired[25]) {
+      _scrollFired[25] = true;
+      fbq('trackCustom', 'ScrollDepth25', { scroll_percent: 25 });
+    }
+    // 50% — chegou nos depoimentos (consideração)
+    if (pct >= 50 && !_scrollFired[50]) {
+      _scrollFired[50] = true;
+      fbq('trackCustom', 'ScrollDepth50', { scroll_percent: 50 });
+    }
+    // 75% — chegou na oferta / preço (alta intenção)
+    if (pct >= 75 && !_scrollFired[75]) {
+      _scrollFired[75] = true;
+      fbq('track', 'AddToCart', _pixelProduct);
+    }
+    // 90% — chegou no FAQ (intenção máxima, quase comprou)
+    if (pct >= 90 && !_scrollFired[90]) {
+      _scrollFired[90] = true;
+      fbq('track', 'Lead', _pixelProduct);
+    }
+  });
+
+  // ────────────────────────────────────────────────────
+  // 3. Seção de Preço visível — AddToCart por Intersection
+  // ────────────────────────────────────────────────────
+  (function() {
+    var priceSection = document.getElementById('preco');
+    if (!priceSection || !window.IntersectionObserver) return;
+    var fired = false;
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting && !fired) {
+        fired = true;
+        fbq('track', 'AddToCart', _pixelProduct);
+      }
+    }, { threshold: 0.3 });
+    obs.observe(priceSection);
+  })();
+
+  // ────────────────────────────────────────────────────
+  // 4. Seção de Oferta visível — ViewContent reforçado
+  // ────────────────────────────────────────────────────
+  (function() {
+    var ofertaSection = document.getElementById('oferta');
+    if (!ofertaSection || !window.IntersectionObserver) return;
+    var fired = false;
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting && !fired) {
+        fired = true;
+        fbq('trackCustom', 'ViewOffer', _pixelProduct);
+      }
+    }, { threshold: 0.4 });
+    obs.observe(ofertaSection);
+  })();
+
+  // ────────────────────────────────────────────────────
+  // 5. Tempo na página — engajamento profundo
+  // ────────────────────────────────────────────────────
+  var _timeFired = {};
+  [30, 60, 120, 180].forEach(function(sec) {
+    setTimeout(function() {
+      if (!_timeFired[sec]) {
+        _timeFired[sec] = true;
+        fbq('trackCustom', 'TimeOnPage' + sec + 's', { seconds: sec });
+      }
+    }, sec * 1000);
+  });
+
+  // ────────────────────────────────────────────────────
+  // 6. FAQ aberto — sinal de objeção (curiosidade ativa)
+  // ────────────────────────────────────────────────────
+  var _faqFired = false;
+  function toggleFAQ(btn) {
+    var body = btn.nextElementSibling;
+    var icon = btn.querySelector('.faq-icon');
+    var isOpen = body.classList.contains('open');
+
+    document.querySelectorAll('.accordion-body').forEach(function(el) { el.classList.remove('open'); });
+    document.querySelectorAll('.faq-icon').forEach(function(el) { el.style.transform = 'rotate(0deg)'; });
+
+    if (!isOpen) {
+      body.classList.add('open');
+      icon.style.transform = 'rotate(45deg)';
+
+      if (!_faqFired) {
+        _faqFired = true;
+        fbq('trackCustom', 'FAQEngagement', {
+          question: btn.querySelector('span').textContent.trim().substring(0, 50)
+        });
+      }
+    }
+  }
+
+  // ────────────────────────────────────────────────────
+  // 7. Countdown timer
+  // ────────────────────────────────────────────────────
+  (function() {
+    var key = 'cdmEnds';
+    var end = parseInt(sessionStorage.getItem(key) || '0');
+    if (!end || end < Date.now()) {
+      end = Date.now() + (14 * 60 + 58) * 1000;
+      sessionStorage.setItem(key, end);
+    }
+    function tick() {
+      var diff = Math.max(0, end - Date.now());
+      var m = Math.floor(diff / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+      var mm = m < 10 ? '0' + m : '' + m;
+      var ss = s < 10 ? '0' + s : '' + s;
+      document.getElementById('countdown').textContent = 'ACABA EM: ' + mm + ':' + ss;
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  // ────────────────────────────────────────────────────
+  // 8. Sticky mobile CTA (aparece após 600px)
+  // ────────────────────────────────────────────────────
+  (function() {
+    var cta = document.getElementById('sticky-cta');
+    window.addEventListener('scroll', function() {
+      if (window.innerWidth < 640) {
+        cta.style.display = window.scrollY > 600 ? 'block' : 'none';
+      }
+    });
+  })();
+
+  // ────────────────────────────────────────────────────
+  // 9. Saída da página — última chance (exit intent)
+  // ────────────────────────────────────────────────────
+  document.addEventListener('mouseleave', function(e) {
+    if (e.clientY <= 0) {
+      fbq('trackCustom', 'ExitIntent', _pixelProduct);
+    }
+  });
+</script>
+
+</body>
+</html>
